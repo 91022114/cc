@@ -1,0 +1,26 @@
+</head>
+<body>
+  <h1>學號: 91022114</h1>
+  <h2>姓名: 陳彥銘</h2>
+  
+  <img id="map" src="DMS11304_1-複本.jpg" alt="高雄市輕軌地圖" style="width: 400px; height: 300px; cursor: pointer;" onclick="downloadMap()">
+
+  <br>
+
+  <a href="answer.html" target="_blank">查看原始 HTML 檔</a>
+  <br>
+  <a href="answer.js" target="_blank">查看原始 JS 檔</a>
+
+  <script>
+    function downloadMap() {
+      var mapElement = document.getElementById('map');
+      var mapSrc = mapElement.src;
+
+      var link = document.createElement('a');
+      link.href = mapSrc;
+      link.download = 'DMS11304_1-複本.jpgdownload';
+      link.click();
+    }
+  </script>
+</body>
+</html>
